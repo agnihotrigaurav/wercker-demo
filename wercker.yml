@@ -1,6 +1,6 @@
 build:
   box: google/golang
-  # base-path: /go/src/github.com/wercker/wercker
+  base-path: /go/src/github.com/wercker/docker-build-golang
   steps:
     # Test the project
     - script:
