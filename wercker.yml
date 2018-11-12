@@ -3,6 +3,10 @@ build:
   steps:
     # Test the project
     - script:
+        name: Debugging
+        code: |
+          pwd
+    - script:
         name: Unit tests
         code: go test ./...     
     - internal/docker-build: 
