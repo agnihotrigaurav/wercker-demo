@@ -1,11 +1,15 @@
 build:
   box: google/golang
+  # base-path: /go/src/github.com/wercker/wercker
   steps:
     # Test the project
     - script:
         name: Debugging
         code: |
+          echo pwd
           pwd
+          echo ls
+          ls
     - script:
         name: Unit tests
         code: go test ./...     
