@@ -1,5 +1,5 @@
 # Using  Wercker to build an image from a Dockerfile
-
+1
 This example shows how wercker can be used to build a docker image from a Dockerfile, run the new image, test the image, and finally push the image to a registry.
 
 The application is a simple Go application, the same as in [getting-started-golang](https://github.com/wercker/getting-started-golang).
