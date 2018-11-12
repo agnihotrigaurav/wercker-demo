@@ -6,6 +6,8 @@ build:
     - script:
         name: Debugging
         code: |
+          echo WERCKER_ROOT=$WERCKER_ROOT
+          echo WERCKER_SOURCE_DIR=$WERCKER_SOURCE_DIR
           echo pwd
           pwd
           echo ls
@@ -16,6 +18,7 @@ build:
     - internal/docker-build: 
         dockerfile: Dockerfile 
         image-name: my-new-image # name used to refer to this image until it's pushed   
+        dockerfile: /go/src/github.com/wercker/docker-build-golang/Dockerfile
     - internal/docker-run:
         image: my-new-image
         name: myTestContainer     
